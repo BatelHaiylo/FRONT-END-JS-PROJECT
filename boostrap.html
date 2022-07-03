@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="boostrap.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <title>GARAGE CELL</title>
+</head>
+<body>
+    <header class="container-fluid">
+        <div id="header">
+            <nav class="navbar navbar-expand-lg bg-light">
+                <div class="container-fluid">
+                  <a class="navbar-brand"><h1 id="logo"><i class="bi bi-emoji-smile-upside-down"></i>  GARAGE CELL</h1><!-- need font change --></a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#" onclick="changeMainContent(event)">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="/HTML/information.html" onclick="changeMainContent(event)">Information</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="/HTML/proudects.html" onclick="changeMainContent(event)">Proudects</a>
+                      <li class="nav-item">
+                        <a class="nav-link" href="/HTML/form.html" onclick="changeMainContent(event)">Form</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="/HTML/contact us.html" onclick="changeMainContent(event)">Contact Us</a>
+                      </li>
+                    </ul>
+                    <form class="d-flex px-5" role="search">
+                      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                      <button class="btn btn-outline-dark" type="submit">Search</button>
+                    </form>
+                </div>
+                <div id="dark_mode" class="form-check form-switch px-3">
+                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                    <label class="form-check-label" for="flexSwitchCheckDefault">dark mode</label>
+                </div>
+            </nav>
+        </div>
+    </header><br>
+
+    <main id="main" class="container d-flex p-2 justify-content-evenly  align-items-center flex-column mb-3">
+        <img src="/images/Instagram Video Story 1080x1920 px.jpeg" class="img-fluid" alt="banner">
+        <hr class="main_section_space">
+        <h1 class="text-center p-3 bg-info text-dark ">"A garage sale is an informal event <br> for the sale of used goods by private individuals,<br>
+            in which sellers are not required to obtain business licenses or collect sales tax"</h1><br><br>
+        <h1>Why Garage Cell?</h1><br>
+        <section  class=" d-flex justify-content-between p-3 text-center">
+            <div><div>
+                <h3 id="y_us_1">People Powered</h3>
+                <p>On Garage Cell, you buy and sell directly with other users.<br>
+                    No middleman means you get the best price and most value.</p>
+            </div><div>
+                <h3 id="y_us_2">No Junk</h3>
+                <p>Garage Cell does not allow broken items.<br>
+                    Every product has listing requirements and an approval process.</p>
+            </div><div>
+                <h3 id="y_us_3">Verified Listings</h3>
+                <p>Every listing on Garage Cell is verified by our expert staff<br>
+                    to ensure our strict listings requirements are followed.<br>
+                    Buy with confidence.</p>
+            </div></div><div class="ps-5"><div>
+                <h3 id="y_us_4">F**k Fraud</h3>
+                <p>Our moderation staff uses the latest, greatest AI and machine-learning tools<br>
+                    to fight fraud before it affects our users.</p>
+            </div><div>
+                <h3 id="y_us_5">Fair Fees</h3>
+                <p>Garage Cell has fair fees, just 3% per party.<br>
+                    That means buyers save more and sellers keep more compared to other marketplaces.</p>
+            </div><div>
+                <h3 id="y_us_6">Great Support</h3>
+                <p>Our support is provided by real humans who actually care.<br>
+                    Garage Cell's typical response time for help requests is around 20 minutes!</p>
+            </div></div>
+        </section><br><br>
+        <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="10000">
+                <img src="/images/page-1.jpeg" class="d-block w-100">
+                <div class="carousel-caption d-none d-md-block">
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="/images/page-1.jpeg" class="d-block w-100">
+                <div class="carousel-caption d-none d-md-block">
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+    </main>
+
+        <footer id="footer" class="navbar bg-light">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">
+                <i class="bi bi-emoji-smile-upside-down"></i>GARAGE CELL
+                <div>
+                    <a href="https://github.com/BatelHaiylo"><i class="bi bi-github"></i></a>
+                    <a href="https://www.linkedin.com/in/batel-haiylo/"><i class="bi bi-linkedin"></i></a>
+                    <a href=""><i class="bi bi-behance"></i></a>
+                    <a href=""><i class="bi bi-envelope-plus-fill"></i></a>
+                </div>
+              </a>
+            </div>
+        </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script src="/JS/pageTransition.js"></script>
+    <script src="/JS/functions.js"></script>
+
+</body>
+</html>
