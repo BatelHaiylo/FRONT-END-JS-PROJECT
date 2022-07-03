@@ -1,6 +1,6 @@
 function information(){
-    return /*html*/
-    `  
+    return `  
+    information test
     <div class="table-responsive">
     <table class="table align-middle">
       <thead>

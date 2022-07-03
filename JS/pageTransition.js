@@ -1,17 +1,17 @@
 var mainContent = document.getElementById('main')
 function changeMainContent(event){
-    mainContent.innerHTML=''
-    switch(event[href]){
-        case '/HTML/information.html':
-            return mainContent.setAttribute(href, event[href])
-        case 'boostrap.html':
-            return mainContent.setAttribute(href, event[href])
-        case '/HTML/proudects.html':
-            return mainContent.setAttribute(href, event[href])
-        case '/HTML/form.html':
-            return mainContent.setAttribute(href, event[href])
-        case '/HTML/contact us.html':
-            return mainContent.setAttribute(href, event[href])
+    // mainContent.innerHTML=''
+    event.preventDefault()
+    
+    let href = event.target.getAttribute('href')
+
+    let links = {
+        '/HTML/information.html':information,
+        '/HTML/proudects.html':proudects,
+        '/HTML/form.html':form,
+        '/HTML/contactus.html':contact,
     }
+    console.log(links[href]())
+    document.getElementById('main').innerHTML = links[href]()
 }
     

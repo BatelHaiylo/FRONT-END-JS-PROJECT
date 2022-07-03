@@ -1,5 +1,5 @@
-function contactn(){
-    return /*html*/
+function contact(){
+    return 
     ` 
     <form class="row g-3 needs-validation" novalidate>
     <div class="col-md-4">

@@ -1,54 +1,20 @@
-body{
-    margin: 0%;
-}
-.grid-container {
-    display: grid;
-    grid-template-areas:
-      'sidebar header header header header'
-      'sidebar main main main main'
-      'sidebar main main main main'
-      'footer footer footer footer footer';
-    width: 100vw;
-    height: 100vh;
-}
-#header {
-    grid-area: header;
-    background-color: #EE2370; 
-    height: 10vh;
-}
+@import url(/CSS/buttons.css);
+@import url(/CSS/links.css);
+@import url(/CSS/fonts.css);
+@import url(/CSS/darkMode.css);
+
 #logo{
-    color: #fff;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-#sideBar {
-    grid-area: sidebar; 
-    background-color: #fff;
-    width: 7vw;
-    height: 30vh;
-    padding-left: 1px 1px 1px 0;
-    text-align: center;
-}
-#menue_content{
-    margin-left: 3vw;
-}
-a:link { /* unvisited link */ color:#000 ; text-decoration: none; border: none; }
-a:visited { /* visited link */ color: #EE2370; }
-a:hover { /* mouse over link */ color: hotpink; border: none; }
-a:active { /* active link */ color: #fff; }
-#icon{
-    padding-top: 5px;
-    color: #EE2370;}
-#main {
-    grid-area: main; 
-    background-color: blanchedalmond;
-    height: 80vh;
-    width: 93vw;
-}
-#footer {
-    grid-area: footer;
-    background-color:#EE2370; 
-    height: 10vh;
-
+  color: #EE2370;
 }
 
- 
+.main_section_space{
+  border: 0px;
+  height: 5vh;
+}
+
+#y_us_1{ background-color: #fe8ce9;}
+#y_us_2{ background-color: #ffe401;}
+#y_us_3{ background-color: #01cb37;}
+#y_us_4{ background-color: #ff4202;}
+#y_us_5{ background-color: #fe0096;}
+#y_us_6{ background-color: #01cffa;}
