@@ -1,6 +1,5 @@
 var mainContent = document.getElementById('main')
 function changeMainContent(event){
-    // mainContent.innerHTML=''
     event.preventDefault()
     
     let href = event.target.getAttribute('href')
