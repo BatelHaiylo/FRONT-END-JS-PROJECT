@@ -1,20 +1,21 @@
-@import url(/CSS/buttons.css);
 @import url(/CSS/links.css);
 @import url(/CSS/fonts.css);
-@import url(/CSS/darkMode.css);
-
-#logo{
-  color: #EE2370;
-}
+@import url(/CSS/colors.css);
 
 .main_section_space{
   border: 0px;
   height: 5vh;
 }
 
-#y_us_1{ background-color: #fe8ce9;}
-#y_us_2{ background-color: #ffe401;}
-#y_us_3{ background-color: #01cb37;}
-#y_us_4{ background-color: #ff4202;}
-#y_us_5{ background-color: #fe0096;}
-#y_us_6{ background-color: #01cffa;}
+#myUL{
+  list-style-type: none;
+}
+
+#main{
+  min-height:100vh!important;
+  overflow: hidden;
+}
+
+.about_image{
+  height: 40vh;
+}

@@ -1,0 +1,19 @@
+body{
+    background-color: #fff;
+}
+
+header{
+    background-color: #0F0C24;
+}
+footer{
+    background-color: #0F0C24;
+}
+#logo{
+    color: #C1436D;
+  }
+#logo_partII{
+    color: #fff;
+}
+#about_my_name{
+    color: #C1436D!important;
+}

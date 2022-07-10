@@ -1,70 +1,71 @@
-function contact(){
-    return /*html*/
-    ` 
-    <form class="row g-3 needs-validation" novalidate>
-    <div class="col-md-4">
-      <label for="validationCustom01" class="form-label">First name</label>
-      <input type="text" class="form-control" id="validationCustom01" value="Mark" required>
-      <div class="valid-feedback">
-        Looks good!
-      </div>
-    </div>
-    <div class="col-md-4">
-      <label for="validationCustom02" class="form-label">Last name</label>
-      <input type="text" class="form-control" id="validationCustom02" value="Otto" required>
-      <div class="valid-feedback">
-        Looks good!
-      </div>
-    </div>
-    <div class="col-md-4">
-      <label for="validationCustomUsername" class="form-label">Username</label>
-      <div class="input-group has-validation">
-        <span class="input-group-text" id="inputGroupPrepend">@</span>
-        <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
-        <div class="invalid-feedback">
-          Please choose a username.
-        </div>
-      </div>
-    </div>
-    <div class="col-md-6">
-      <label for="validationCustom03" class="form-label">City</label>
-      <input type="text" class="form-control" id="validationCustom03" required>
-      <div class="invalid-feedback">
-        Please provide a valid city.
-      </div>
-    </div>
-    <div class="col-md-3">
-      <label for="validationCustom04" class="form-label">State</label>
-      <select class="form-select" id="validationCustom04" required>
-        <option selected disabled value="">Choose...</option>
-        <option>...</option>
-      </select>
-      <div class="invalid-feedback">
-        Please select a valid state.
-      </div>
-    </div>
-    <div class="col-md-3">
-      <label for="validationCustom05" class="form-label">Zip</label>
-      <input type="text" class="form-control" id="validationCustom05" required>
-      <div class="invalid-feedback">
-        Please provide a valid zip.
-      </div>
-    </div>
-    <div class="col-12">
-      <div class="form-check">
-        <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
-        <label class="form-check-label" for="invalidCheck">
-          Agree to terms and conditions
-        </label>
-        <div class="invalid-feedback">
-          You must agree before submitting.
-        </div>
-      </div>
-    </div>
-    <div class="col-12">
-      <button class="btn btn-primary" type="submit">Submit form</button>
-    </div>
-  </form>
-<a href="mailto:inpo686@gmail.com">Send email</a>
+function contact() {
+  return ` 
 
-  `}
+<section class="hero">
+<div class="container">
+  <ol class="breadcrumb justify-content-center">
+    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+    <li class="breadcrumb-item active">Contact Us        </li>
+  </ol>
+  <div class="hero-content pb-5 text-center">
+    <h1 class="hero-heading mb-0">Contact Us</h1>
+  </div>
+</div>
+</section>
+
+    <section class="py-6">
+    <div class="container" style="min-height:90vh">
+      <div class="row">
+        <div class="col-md-7 mb-5 mb-md-0">
+          <form class="form" id="contact-form" method="post" action="contact.php">
+            <div class="controls">
+              <div class="row">
+                <div class="col-sm-6">
+                  <div class="mb-4">
+                    <label class="form-label" for="name">Your firstname *</label>
+                    <input class="form-control" type="text" name="name" id="name" placeholder="Enter your firstname" required="required">
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="mb-4">
+                    <label class="form-label" for="surname">Your lastname *</label>
+                    <input class="form-control" type="text" name="surname" id="surname" placeholder="Enter your  lastname" required="required">
+                  </div>
+                </div>
+              </div>
+              <div class="mb-4">
+                <label class="form-label" for="email">Your email *</label>
+                <input class="form-control" type="email" name="email" id="email" placeholder="Enter your  email" required="required">
+              </div>
+              <div class="mb-4">
+                <label class="form-label" for="message">Your message for us *</label>
+                <textarea class="form-control" rows="4" name="message" id="message" placeholder="Enter your message" required="required"></textarea>
+              </div>
+              <button class="btn btn-outline-dark" type="submit">Send message</button>
+            </div>
+          </form>
+        </div>
+        <div class="col-md-5">
+          <h3 class="text-muted"> Sell a device with Garage Cell </h3>
+          <p class="text-muted">On Garage cell, you buy and sell directly with other users. Cutting out the middleman means you join a community market with the best prices and highest value.</p>
+          <p ><img src=""></p>
+          <div class="social">
+            <ul class="list-inline">
+              <li class="list-inline-item"><a href="https://twitter.com/samsungmobile" target="_blank"><i class="bi bi-twitter"></i></i></a></li>
+              <li class="list-inline-item"><a href="https://www.instagram.com/samsungisrael/" target="_blank"><i class="bi bi-instagram"></i></i></a></li>
+              <li class="list-inline-item"><a href="https://www.facebook.com/SamsungIsrael/" target="_blank"><i class="bi bi-meta"></i></i></a></li>
+              <li class="list-inline-item"><a href="https://wa.me/?text=urlencodedtext " target="_blank"><i class="bi bi-whatsapp"></i></a></li>
+              <li class="list-inline-item"><a href="https://www.tiktok.com/@samsungisrael?lang=he-IL" target="_blank"><i class="bi bi-tiktok"></i></i></i></a></li>
+              <li class="list-inline-item">
+              <a title="New window opens" data-omni-type="support_content" data-omni="contact us:Email Support" onclick="window.open('https://contactus.samsung.com/customer/contactus/formmail/mail/MailQuestionProduct.jsp?SITE_ID=165', 'open', 'width=725, height=600, scrollbars=yes, resizable=no' );" href="#">
+              <i class="bi bi-envelope"></i></i></a></li>
+            </ul>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  `;
+}

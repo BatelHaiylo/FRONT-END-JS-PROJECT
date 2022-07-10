@@ -1,4 +1,6 @@
 body {
-    font-family: "Lato", sans-serif;
+  font-family: 'Heebo', sans-serif!important;
   }
-  
+  .container :is(h1, h2, h3, h4, h5, button){
+    font-family: 'Anton', sans-serif!important;
+  }

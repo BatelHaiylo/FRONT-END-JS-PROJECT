@@ -1,27 +1,35 @@
-// async function del(url){
-//     try{
-//         return await fetch(url,{method:'DELETE'})
-//         .then(res => res.json())
-//     }
-//     catch(error){}
-// }
+var mainContent = document.getElementById('main')
+function changeMainContent(event){
+    event.preventDefault()
 
-// async function err(error){
-//     alert(error.message)
-// }
+    let href = event.target.getAttribute('href')
 
-async function getImage(){
-    try{
-        return await fetch('https://my-json-server.typicode.com/Jeck99/fake-server/devices')
-        .then(res => res.json())
+    let links = {
+        '/JS/form.js':form,
+        '/JS/about.js':about,
+        '/JS/userPage.js':userlogin,
+        '/JS/contact.js':contact,
+        '/JS/cart.js':viewCart
     }
-    finally{}
+    console.log(links[href]())
+    mainContent.innerHTML = links[href]()
 }
 
-// function printImage(){
-//     getImage()
-//     .then(res.data(res => document.body.innerHTML += `<img src="${item.picture}">`))
-// }
-// printImage()
+function search(){
+    var input, filter, ul, li, a, i, txtValue;
+    input = document.getElementById("myInput");
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("myUL");
+    li = ul.getElementsByTagName("li");
 
-// document.body.innerHTML += `<img src="https://placeholder.com/wp-content/uploads/2018/10/placeholder-1.webp"
+    for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("a")[0];
+        txtValue = a.textContent || a.innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
+        }
+        else {
+            li[i].style.display = "none";
+        }
+    }
+}
