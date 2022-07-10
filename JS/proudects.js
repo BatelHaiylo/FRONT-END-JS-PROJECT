@@ -30,7 +30,7 @@ class Device {
   template(product) {
       let {brand,color,createdAt,id,isAvailable,picture,price,ram} = product
       return `
-          <div class="card col-4 g-4" id="${id}">
+          <div class="card col-sm-10 col-md-4 g-4" id="${id}">
             <img id="proudect_img" src="${picture}" class="card-img-top h-50">
             <div class="card-body">
               <h3 class="card-title">${brand}   ${color}</h3>
